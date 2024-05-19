@@ -1,7 +1,7 @@
 from rest_framework.parsers import JSONParser
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from rest_frameworks import status
+from rest_framework import status
 from mailchimp_marketing import Client
 from mailchimp_marketing.api_client import ApiClientError
 from .models import WaitlistContact
@@ -24,14 +24,10 @@ def add_to_waitlist(request):
             })
             
             # Retrieve list ID and prepare member info
-            list_id = "YOUR_LIST_ID"
+            list_id = "AFROVIVO_WAITLIST_ID"
             member_info = {
                 "email_address": serializer.validated_data['email'],
                 "status": serializer.validated_data['subscription_status'],
-                "merge_fields": {
-                    "first_name": serializer.validated_data.get('first_name', ''),
-                    "last_name": serializer.validated_data.get('last_name', '')
-                }
             }
 
             # Add member to Mailchimp list

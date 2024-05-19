@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "waitlist-mailchimp-api-connect"
+version = "0.2.0"
+description = "This is a forked version for Afrovivo's waitlist app"
+authors = ["Godfred777 <81054545+Godfred777@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10.0"
+Django = "^5.0.6"
+djangorestframework = "^3.15.1"
+environs = "^11.0.0"
+mailchimp = "^2.0.10"
+mailchimp-marketing = "^3.0.80"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

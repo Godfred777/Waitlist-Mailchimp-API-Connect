@@ -11,7 +11,8 @@ WORKDIR /app
 COPY . /app/
 
 #Install any neeeded dependencies specified in the requirements.txt
-RUN pip install -r requirements.txt
+RUN pip install poetry
+RUN poetry install
 
 #Expose the port that Django runs on
 EXPOSE 8000
