@@ -10,7 +10,7 @@ WORKDIR /app
 #Copy the current directory contents into the container at /app
 COPY . /app/
 
-#Install any neeeded dependencies specified in the requirements.txt
+#Install poetry and use poetry to install all the dependencies in the poetry.lock file
 RUN pip install poetry
 RUN poetry install
 
