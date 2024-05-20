@@ -1,5 +1,5 @@
 #Use an official Python runtime as parent image
-FROM python:3.8.10
+FROM python:3.10.0
 
 #Set environment variables for Python to not buffer output
 ENV PYTHONBUFFERED 1
