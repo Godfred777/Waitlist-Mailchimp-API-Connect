@@ -18,7 +18,7 @@ def add_to_waitlist(request):
 
             # Initialize Mailchimp client
             mailchimp = Client()
-            mailchimp.setConfig({
+            mailchimp.set_config({
                 "api_key": "e01ade4d0e977bb47335bca8f4f0c065-us21",
                 "server": "us21"
             })

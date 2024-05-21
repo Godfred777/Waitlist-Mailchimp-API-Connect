@@ -20,6 +20,6 @@ from api.views import add_to_waitlist
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-       path('add_to_waitlist/', add_to_waitlist, name='add_to_waitlist')
+       path('add_to_waitlist', add_to_waitlist, name='add_to_waitlist')
 
 ]
